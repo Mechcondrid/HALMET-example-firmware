@@ -94,13 +94,13 @@ void setup() {
   BUILDER_CLASS builder;
   sensesp_app = (&builder)
                     // EDIT: Set a custom hostname for the app.
-                    ->set_hostname("halmet")
+                    ->set_hostname("Seabrat - halmet")
                     // EDIT: Optionally, hard-code the WiFi and Signal K server
                     // settings. This is normally not needed.
                     //->set_wifi("My WiFi SSID", "my_wifi_password")
                     //->set_sk_server("192.168.10.3", 80)
                     // EDIT: Enable OTA updates with a password.
-                    //->enable_ota("my_ota_password")
+                    ->enable_ota("ota_password")
                     ->get_app();
 
   // initialize the I2C bus
