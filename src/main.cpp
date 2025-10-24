@@ -177,11 +177,10 @@ void setup() {
 
   // Connect the tank senders.
   // EDIT: To enable more tanks, uncomment the lines below.
-  auto tank_a1_volume = ConnectTankSender(ads1115, 0, "Fuel", "fuel.main", 3000,
-                                          enable_signalk_output);
-  // auto tank_a2_volume = ConnectTankSender(ads1115, 1, "A2");
-  // auto tank_a3_volume = ConnectTankSender(ads1115, 2, "A3");
-  // auto tank_a4_volume = ConnectTankSender(ads1115, 3, "A4");
+  auto tank_a1_volume = ConnectTankSender(ads1115, 0, "Fuel", "fuel.main", 1200, enable_signalk_output);
+  auto tank_a2_volume = ConnectTankSender(ads1115, 1, "Fresh", "Water.Fresh", 300, enable_signalk_output);
+  auto tank_a3_volume = ConnectTankSender(ads1115, 2, "Black", "Water.black", 160, enable_signalk_output);
+  //auto tank_a4_volume = ConnectTankSender(ads1115, 3, "A4");
 
 #ifdef ENABLE_NMEA2000_OUTPUT
   // Tank 1, instance 0. Capacity 200 liters. You can change the capacity
