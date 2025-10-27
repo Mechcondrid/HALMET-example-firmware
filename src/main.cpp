@@ -136,10 +136,10 @@ void setup() {
   // Set Product information
   // EDIT: Change the values below to match your device.
   nmea2000->SetProductInformation(
-      "20231229",  // Manufacturer's Model serial code (max 32 chars)
+      "10272025",  // Manufacturer's Model serial code (max 32 chars)
       104,         // Manufacturer's product code
-      "HALMET",    // Manufacturer's Model ID (max 33 chars)
-      "1.0.0",     // Manufacturer's Software version code (max 40 chars)
+      "Seabrat - HALMET",    // Manufacturer's Model ID (max 33 chars)
+      "1.0.5",     // Manufacturer's Software version code (max 40 chars)
       "1.0.0"      // Manufacturer's Model version (max 24 chars)
   );
 
